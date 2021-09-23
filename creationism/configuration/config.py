@@ -328,16 +328,14 @@ class Configuration(ConfigDict):
 def get_module(module):
     try:
         return importlib.import_module(module)
-    except:
-        pass
-
-    try:
-        module = Path(module)
-        spec = importlib.util.spec_from_file_location(module.stem, str(module))
-        module = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(module)
-    except AttributeError as ae:
-        raise AttributeError(f"failed to load module: {module}") from ae
+    except Exception:
+        try:
+            module = Path(module)
+            spec = importlib.util.spec_from_file_location(module.stem, str(module))
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+        except AttributeError:
+            raise ImportError(f"failed to load module: {module}")
     return module
 
 
