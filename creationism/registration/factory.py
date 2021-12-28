@@ -6,7 +6,6 @@ from creationism.registration.registrar import Registrar
 cache = lru_cache(maxsize=None)
 from dataclasses import dataclass
 from typing import Optional
-import inspect
 
 @dataclass(frozen=True)
 class RegistrantNotRegisteredError(Exception):
@@ -43,7 +42,7 @@ class RegistrantFactory(Registrar):
     """Factory class for creating instances or retreive object references
 
     Class Atributes:
-        STATIC (bool): Used to create static instances if the instantiation is identical
+        STATIC (bool): Create static instances if the instantiation is identical
 
     Raises:
         RegistrantNotRegisteredError: raised when registrant name is not in the register
@@ -60,6 +59,19 @@ class RegistrantFactory(Registrar):
         *args,
         **kwargs
     ):
+        """Creates from registrant a type or instance
+
+        Args:
+            registrant_name (Union[str, type]): name of the registrant that should be created
+            return_type (bool, optional): if True only the type of the registrant is returened otherwise it will create and return an instance. Defaults to False.
+
+        Raises:
+            RegistrantNotRegisteredError: raises when the registrant is nog registered
+
+        Returns:
+            Any: type or instance of the registrant
+        """
+
         if cls._REGISTER is None:
             raise RegistrantNotRegisteredError(
                 cls=cls,

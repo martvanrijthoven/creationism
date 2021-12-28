@@ -9,8 +9,9 @@ class Registrar(ABC):
 
     Class Attributes:
         AUTO (bool): when enabled a subclass will be automatically registered with its class name
-        REPLACE (bool): ...
+        REPLACE (bool): Replace registeration if new class is registered under same name
         CONVERT_NAME (Callable): function that converts the class name
+        RECURSIVE (bool): recursively register subclasses
 
     Warnings:
         DuplicateRegistrantNameWarning:

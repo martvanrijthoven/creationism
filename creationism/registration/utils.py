@@ -3,6 +3,8 @@ from typing import Any, Callable, Tuple
 
 
 class Text:
+    """Contain that contains string manipulation utilities"""
+
     BOLD = "\033[1m"
     BOLD_END = "\033[0m"
 
@@ -24,6 +26,8 @@ class Text:
 
 
 def chain_functions(x: Any, *functions: Tuple[Callable]) -> Any:
+    """Given a list of functions chains them over input x"""
+
     for function in functions:
         x = function(x)
     return x
