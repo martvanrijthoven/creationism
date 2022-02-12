@@ -1,0 +1,6 @@
+creationism.utils.first\_lowered
+================================
+
+.. currentmodule:: creationism.utils
+
+.. autofunction:: first_lowered

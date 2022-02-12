@@ -1,0 +1,43 @@
+creationism.registration.factory.RegistrantFactory
+==================================================
+
+.. currentmodule:: creationism.registration.factory
+
+.. autoclass:: RegistrantFactory
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~RegistrantFactory.__init__
+      ~RegistrantFactory.class_name
+      ~RegistrantFactory.create
+      ~RegistrantFactory.get_registrant
+      ~RegistrantFactory.names
+      ~RegistrantFactory.register
+      ~RegistrantFactory.register_func
+      ~RegistrantFactory.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~RegistrantFactory.AUTO
+      ~RegistrantFactory.CONVERT_NAME
+      ~RegistrantFactory.RECURSIVE
+      ~RegistrantFactory.REPLACE
+      ~RegistrantFactory.STATIC
+      ~RegistrantFactory.name
+   
+   

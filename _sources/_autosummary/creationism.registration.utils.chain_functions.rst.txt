@@ -1,0 +1,6 @@
+creationism.registration.utils.chain\_functions
+===============================================
+
+.. currentmodule:: creationism.registration.utils
+
+.. autofunction:: chain_functions

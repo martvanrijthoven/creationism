@@ -1,0 +1,33 @@
+creationism.utils
+=================
+
+.. automodule:: creationism.utils
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      create_name_from_class_name
+      first_lowered
+      open_json
+      open_yaml
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

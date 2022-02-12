@@ -1,0 +1,6 @@
+creationism.utils.open\_json
+============================
+
+.. currentmodule:: creationism.utils
+
+.. autofunction:: open_json

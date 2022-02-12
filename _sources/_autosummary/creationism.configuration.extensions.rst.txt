@@ -1,0 +1,40 @@
+creationism.configuration.extensions
+====================================
+
+.. automodule:: creationism.configuration.extensions
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      open_config
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:                                         
+      :template: custom-class-template.rst               
+   
+      ConfigurationFileExtension
+      JsonConfigurationFileExtension
+      YamlConfigurationFileExtension
+   
+   
+
+   
+   
+   
+
+
+

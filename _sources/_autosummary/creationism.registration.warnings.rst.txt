@@ -1,0 +1,30 @@
+creationism.registration.warnings
+=================================
+
+.. automodule:: creationism.registration.warnings
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Exceptions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      DuplicateRegistrantNameWarning
+   
+   
+
+
+

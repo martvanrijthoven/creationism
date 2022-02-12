@@ -1,0 +1,38 @@
+creationism.registration.factory
+================================
+
+.. automodule:: creationism.registration.factory
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:                                         
+      :template: custom-class-template.rst               
+   
+      RegistrantFactory
+   
+   
+
+   
+   
+   .. rubric:: Exceptions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      RegistrantNotRegisteredError
+   
+   
+
+
+

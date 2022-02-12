@@ -1,0 +1,6 @@
+creationism.configuration.config.resolve\_none
+==============================================
+
+.. currentmodule:: creationism.configuration.config
+
+.. autofunction:: resolve_none

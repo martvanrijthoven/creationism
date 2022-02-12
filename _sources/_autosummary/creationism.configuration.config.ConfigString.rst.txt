@@ -1,0 +1,91 @@
+creationism.configuration.config.ConfigString
+=============================================
+
+.. currentmodule:: creationism.configuration.config
+
+.. autoclass:: ConfigString
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ConfigString.CONVERT_NAME
+      ~ConfigString.__init__
+      ~ConfigString.build
+      ~ConfigString.capitalize
+      ~ConfigString.casefold
+      ~ConfigString.cast
+      ~ConfigString.center
+      ~ConfigString.class_name
+      ~ConfigString.count
+      ~ConfigString.create
+      ~ConfigString.encode
+      ~ConfigString.endswith
+      ~ConfigString.expandtabs
+      ~ConfigString.find
+      ~ConfigString.format
+      ~ConfigString.format_map
+      ~ConfigString.get_registrant
+      ~ConfigString.index
+      ~ConfigString.isalnum
+      ~ConfigString.isalpha
+      ~ConfigString.isascii
+      ~ConfigString.isdecimal
+      ~ConfigString.isdigit
+      ~ConfigString.isidentifier
+      ~ConfigString.islower
+      ~ConfigString.isnumeric
+      ~ConfigString.isprintable
+      ~ConfigString.isspace
+      ~ConfigString.istitle
+      ~ConfigString.isupper
+      ~ConfigString.join
+      ~ConfigString.ljust
+      ~ConfigString.lower
+      ~ConfigString.lstrip
+      ~ConfigString.maketrans
+      ~ConfigString.merge
+      ~ConfigString.names
+      ~ConfigString.partition
+      ~ConfigString.register
+      ~ConfigString.register_func
+      ~ConfigString.registered
+      ~ConfigString.replace
+      ~ConfigString.rfind
+      ~ConfigString.rindex
+      ~ConfigString.rjust
+      ~ConfigString.rpartition
+      ~ConfigString.rsplit
+      ~ConfigString.rstrip
+      ~ConfigString.split
+      ~ConfigString.splitlines
+      ~ConfigString.startswith
+      ~ConfigString.strip
+      ~ConfigString.swapcase
+      ~ConfigString.title
+      ~ConfigString.translate
+      ~ConfigString.upper
+      ~ConfigString.zfill
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ConfigString.AUTO
+      ~ConfigString.RECURSIVE
+      ~ConfigString.REPLACE
+      ~ConfigString.STATIC
+      ~ConfigString.name
+   
+   

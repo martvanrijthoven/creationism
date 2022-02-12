@@ -1,0 +1,6 @@
+creationism.registration.factory.RegistrantNotRegisteredError
+=============================================================
+
+.. currentmodule:: creationism.registration.factory
+
+.. autoexception:: RegistrantNotRegisteredError

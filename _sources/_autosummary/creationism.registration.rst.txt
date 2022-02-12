@@ -1,0 +1,35 @@
+creationism.registration
+========================
+
+.. automodule:: creationism.registration
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :template: custom-module-template.rst                 
+   :recursive:
+
+   creationism.registration.factory
+   creationism.registration.registrar
+   creationism.registration.utils
+   creationism.registration.warnings
+

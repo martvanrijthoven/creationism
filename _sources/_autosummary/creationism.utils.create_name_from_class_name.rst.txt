@@ -1,0 +1,6 @@
+creationism.utils.create\_name\_from\_class\_name
+=================================================
+
+.. currentmodule:: creationism.utils
+
+.. autofunction:: create_name_from_class_name

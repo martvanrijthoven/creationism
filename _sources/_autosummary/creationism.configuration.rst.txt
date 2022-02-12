@@ -1,0 +1,33 @@
+creationism.configuration
+=========================
+
+.. automodule:: creationism.configuration
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. rubric:: Modules
+
+.. autosummary::
+   :toctree:
+   :template: custom-module-template.rst                 
+   :recursive:
+
+   creationism.configuration.config
+   creationism.configuration.extensions
+

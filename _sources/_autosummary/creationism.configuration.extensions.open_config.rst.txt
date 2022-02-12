@@ -1,0 +1,6 @@
+creationism.configuration.extensions.open\_config
+=================================================
+
+.. currentmodule:: creationism.configuration.extensions
+
+.. autofunction:: open_config

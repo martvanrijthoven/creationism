@@ -1,0 +1,47 @@
+creationism.configuration.extensions.JsonConfigurationFileExtension
+===================================================================
+
+.. currentmodule:: creationism.configuration.extensions
+
+.. autoclass:: JsonConfigurationFileExtension
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~JsonConfigurationFileExtension.__init__
+      ~JsonConfigurationFileExtension.class_name
+      ~JsonConfigurationFileExtension.create
+      ~JsonConfigurationFileExtension.get_registrant
+      ~JsonConfigurationFileExtension.has_extension
+      ~JsonConfigurationFileExtension.is_configuration_extension_path
+      ~JsonConfigurationFileExtension.is_extension
+      ~JsonConfigurationFileExtension.names
+      ~JsonConfigurationFileExtension.open
+      ~JsonConfigurationFileExtension.register
+      ~JsonConfigurationFileExtension.register_func
+      ~JsonConfigurationFileExtension.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~JsonConfigurationFileExtension.AUTO
+      ~JsonConfigurationFileExtension.CONVERT_NAME
+      ~JsonConfigurationFileExtension.RECURSIVE
+      ~JsonConfigurationFileExtension.REPLACE
+      ~JsonConfigurationFileExtension.STATIC
+      ~JsonConfigurationFileExtension.name
+   
+   

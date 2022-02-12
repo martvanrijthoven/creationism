@@ -1,0 +1,45 @@
+creationism.extension.Extension
+===============================
+
+.. currentmodule:: creationism.extension
+
+.. autoclass:: Extension
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Extension.__init__
+      ~Extension.class_name
+      ~Extension.create
+      ~Extension.get_registrant
+      ~Extension.has_extension
+      ~Extension.is_extension
+      ~Extension.names
+      ~Extension.register
+      ~Extension.register_func
+      ~Extension.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Extension.AUTO
+      ~Extension.CONVERT_NAME
+      ~Extension.RECURSIVE
+      ~Extension.REPLACE
+      ~Extension.STATIC
+      ~Extension.name
+   
+   

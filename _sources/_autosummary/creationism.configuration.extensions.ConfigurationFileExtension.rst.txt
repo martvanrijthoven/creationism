@@ -1,0 +1,47 @@
+creationism.configuration.extensions.ConfigurationFileExtension
+===============================================================
+
+.. currentmodule:: creationism.configuration.extensions
+
+.. autoclass:: ConfigurationFileExtension
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ConfigurationFileExtension.__init__
+      ~ConfigurationFileExtension.class_name
+      ~ConfigurationFileExtension.create
+      ~ConfigurationFileExtension.get_registrant
+      ~ConfigurationFileExtension.has_extension
+      ~ConfigurationFileExtension.is_configuration_extension_path
+      ~ConfigurationFileExtension.is_extension
+      ~ConfigurationFileExtension.names
+      ~ConfigurationFileExtension.open
+      ~ConfigurationFileExtension.register
+      ~ConfigurationFileExtension.register_func
+      ~ConfigurationFileExtension.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ConfigurationFileExtension.AUTO
+      ~ConfigurationFileExtension.CONVERT_NAME
+      ~ConfigurationFileExtension.RECURSIVE
+      ~ConfigurationFileExtension.REPLACE
+      ~ConfigurationFileExtension.STATIC
+      ~ConfigurationFileExtension.name
+   
+   

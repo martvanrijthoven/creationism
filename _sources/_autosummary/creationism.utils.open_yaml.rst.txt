@@ -1,0 +1,6 @@
+creationism.utils.open\_yaml
+============================
+
+.. currentmodule:: creationism.utils
+
+.. autofunction:: open_yaml

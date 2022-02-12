@@ -1,0 +1,25 @@
+creationism.configuration.config.UserObject
+===========================================
+
+.. currentmodule:: creationism.configuration.config
+
+.. autoclass:: UserObject
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~UserObject.__init__
+   
+   
+
+   
+   
+   

@@ -1,0 +1,41 @@
+creationism.registration.registrar.Registrar
+============================================
+
+.. currentmodule:: creationism.registration.registrar
+
+.. autoclass:: Registrar
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Registrar.__init__
+      ~Registrar.class_name
+      ~Registrar.get_registrant
+      ~Registrar.names
+      ~Registrar.register
+      ~Registrar.register_func
+      ~Registrar.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Registrar.AUTO
+      ~Registrar.CONVERT_NAME
+      ~Registrar.RECURSIVE
+      ~Registrar.REPLACE
+      ~Registrar.name
+   
+   

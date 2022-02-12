@@ -1,0 +1,6 @@
+creationism.registration.warnings.DuplicateRegistrantNameWarning
+================================================================
+
+.. currentmodule:: creationism.registration.warnings
+
+.. autoexception:: DuplicateRegistrantNameWarning

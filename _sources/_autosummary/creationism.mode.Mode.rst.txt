@@ -1,0 +1,43 @@
+creationism.mode.Mode
+=====================
+
+.. currentmodule:: creationism.mode
+
+.. autoclass:: Mode
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Mode.CONVERT_NAME
+      ~Mode.__init__
+      ~Mode.class_name
+      ~Mode.create
+      ~Mode.get_registrant
+      ~Mode.names
+      ~Mode.register
+      ~Mode.register_func
+      ~Mode.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Mode.AUTO
+      ~Mode.RECURSIVE
+      ~Mode.REPLACE
+      ~Mode.STATIC
+      ~Mode.name
+   
+   

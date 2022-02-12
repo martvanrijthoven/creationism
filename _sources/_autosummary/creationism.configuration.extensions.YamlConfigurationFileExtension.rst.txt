@@ -1,0 +1,47 @@
+creationism.configuration.extensions.YamlConfigurationFileExtension
+===================================================================
+
+.. currentmodule:: creationism.configuration.extensions
+
+.. autoclass:: YamlConfigurationFileExtension
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~YamlConfigurationFileExtension.__init__
+      ~YamlConfigurationFileExtension.class_name
+      ~YamlConfigurationFileExtension.create
+      ~YamlConfigurationFileExtension.get_registrant
+      ~YamlConfigurationFileExtension.has_extension
+      ~YamlConfigurationFileExtension.is_configuration_extension_path
+      ~YamlConfigurationFileExtension.is_extension
+      ~YamlConfigurationFileExtension.names
+      ~YamlConfigurationFileExtension.open
+      ~YamlConfigurationFileExtension.register
+      ~YamlConfigurationFileExtension.register_func
+      ~YamlConfigurationFileExtension.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~YamlConfigurationFileExtension.AUTO
+      ~YamlConfigurationFileExtension.CONVERT_NAME
+      ~YamlConfigurationFileExtension.RECURSIVE
+      ~YamlConfigurationFileExtension.REPLACE
+      ~YamlConfigurationFileExtension.STATIC
+      ~YamlConfigurationFileExtension.name
+   
+   
