@@ -31,7 +31,6 @@
    creationism.configuration
    creationism.extension
    creationism.mode
-   creationism.multifilelogger
    creationism.registration
    creationism.utils
 

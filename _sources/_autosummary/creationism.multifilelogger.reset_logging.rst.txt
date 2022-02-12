@@ -1,6 +1,0 @@
-creationism.multifilelogger.reset\_logging
-==========================================
-
-.. currentmodule:: creationism.multifilelogger
-
-.. autofunction:: reset_logging

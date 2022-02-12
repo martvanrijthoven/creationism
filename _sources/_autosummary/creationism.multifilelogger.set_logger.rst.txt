@@ -1,6 +1,0 @@
-creationism.multifilelogger.set\_logger
-=======================================
-
-.. currentmodule:: creationism.multifilelogger
-
-.. autofunction:: set_logger
