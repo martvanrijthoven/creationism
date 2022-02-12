@@ -7,6 +7,9 @@ default:
   mode2:
     module: creationism.mode
     attribute: DefaultMode
+  mode3:
+    module: ./creationism/mode.py
+    attribute: DefaultMode
   a: a
   s: string
   i: 1

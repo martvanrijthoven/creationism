@@ -1,8 +1,11 @@
 import os
 from creationism.configuration.config import Configuration
 from creationism.configuration.config import open_config
+from creationism.configuration.extensions import ConfigurationFileExtension, JsonConfigurationFileExtension
 from creationism.mode import Mode, DefaultMode
 from pathlib import Path
+
+from creationism.utils import create_name_from_class_name
 
 
 class TestConfig:
@@ -65,8 +68,15 @@ class TestConfig:
         config_dict = Configuration(name='', config_value=config, modes=('default',))
         assert config_dict["c"]["name"].replace is False
 
-    def test_cast_config_dict(self):
-        pass
+    def test_has_extension(self):
+        user_config = Path(__file__).parent / "testobject.json"
+        assert True == ConfigurationFileExtension.has_extension(user_config, JsonConfigurationFileExtension)
+
+    def test_is_extension(self):
+        assert True == ConfigurationFileExtension.is_extension('.json', JsonConfigurationFileExtension)
+
+    def test_create_name_from_class(self):
+        assert 'Json Configuration File' == create_name_from_class_name('JsonConfigurationFileExtension')
 
     def test_build_config(self):
         user_config = str(Path(__file__).parent / "testobject.json")
