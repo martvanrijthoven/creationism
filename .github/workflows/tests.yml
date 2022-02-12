@@ -3,12 +3,12 @@ name: tests
 on:
   push:
     paths:
-      - "concurrentbuffer/**"
+      - "creationism/**"
       - "tests/**"
       - .github/workflows/tests.yml
   pull_request:
     paths:
-      - "concurrentbuffer/**"
+      - "creationism/**"
       - "tests/**"
       - .github/workflows/tests.yml
 
@@ -37,7 +37,7 @@ jobs:
         run: |
           pip install pytest
           pip install pytest-cov
-          pytest --cov=./concurrentbuffer --cov-report=xml
+          pytest --cov=./creationism --cov-report=xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
