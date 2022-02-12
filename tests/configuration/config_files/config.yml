@@ -1,0 +1,22 @@
+default:
+  mode:
+    registrar_module: creationism.mode
+    registrar_name: Mode
+    registrant_module: creationism.mode
+    registrant_name: default
+  mode2:
+    module: creationism.mode
+    attribute: DefaultMode
+  a: a
+  s: string
+  i: 1
+  d_replace@replace=true:
+    d_sub: 1
+  d:
+    d_sub: 1
+  b: True
+  n: None
+  l: [1,2,3]
+  l2: [1,2,3]
+  ref: ${testconfiguration:mode2}
+  ref_property: ${testconfiguration:mode.name.upper}

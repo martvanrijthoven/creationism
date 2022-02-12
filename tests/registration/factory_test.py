@@ -1,5 +1,5 @@
-from strar.factory import RegistrantFactory
-from strar.utils import Text, chain_functions
+from creationism.registration.factory import RegistrantFactory
+from creationism.registration.utils import Text, chain_functions
 
 class TestRegistrantFactory:
 

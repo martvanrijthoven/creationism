@@ -1,4 +1,4 @@
-from strar.utils import Text, chain_functions
+from creationism.registration.utils import Text, chain_functions
 
 
 class TestTextUtils:

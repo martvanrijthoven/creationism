@@ -1,0 +1,15 @@
+{
+	"default": {
+		"mode": {
+			"registrar_module": "creationism.mode",
+			"registrar_name": "Mode",
+			"registrant_name": "default"
+		},
+		"s": "string",
+		"i": 1,
+		"b": true,
+		"n": "None",
+		"l": [1, 2, 3]
+	}
+
+}

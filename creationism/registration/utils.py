@@ -17,6 +17,10 @@ class Text:
         return sep.join(re.findall(".[^A-Z]*", text))
 
     @staticmethod
+    def split_capitals_with_underscore(text: str) -> str:
+        return "_".join(re.findall(".[^A-Z]*", text))
+
+    @staticmethod
     def split(text: str, sep: str = ' ') -> str:
         return text.split(sep)
 

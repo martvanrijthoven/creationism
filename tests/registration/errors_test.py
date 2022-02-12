@@ -1,7 +1,7 @@
 from pytest import raises
-from strar.errors import RegistrantNotRegisteredError
-from strar.factory import RegistrantFactory
-from strar.utils import Text, chain_functions
+from creationism.registration.factory import RegistrantNotRegisteredError
+from creationism.registration.factory import RegistrantFactory
+from creationism.registration.utils import Text, chain_functions
 
 
 class TestErrors:

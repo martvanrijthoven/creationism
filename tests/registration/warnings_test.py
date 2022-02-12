@@ -1,14 +1,14 @@
 from pytest import warns
-from strar.registration import Registrar
-from strar.utils import Text, chain_functions
-from strar.warnings import DuplicateRegistrantNameWarning
+from creationism.registration.factory import RegistrantFactory
+from creationism.registration.utils import Text, chain_functions
+from creationism.registration.warnings import DuplicateRegistrantNameWarning
 
 
 class TestWarnings:
     def test_no_replace(self):
         with warns(DuplicateRegistrantNameWarning):
 
-            class A(Registrar):
+            class A(RegistrantFactory):
                 AUTO = False
                 CONVERT_NAME = lambda x: x
                 REPLACE = False
@@ -19,7 +19,7 @@ class TestWarnings:
 
         with warns(DuplicateRegistrantNameWarning):
 
-            class A(Registrar):
+            class A(RegistrantFactory):
                 AUTO = True
                 CONVERT_NAME = lambda x: chain_functions(
                     x, Text.split_capitals_with_underscore, Text.lower
@@ -34,7 +34,7 @@ class TestWarnings:
 
         with warns(None) as record:
 
-            class A(Registrar):
+            class A(RegistrantFactory):
                 AUTO = False
                 CONVERT_NAME = lambda x: chain_functions(
                     x, Text.split_capitals_with_underscore, Text.lower
@@ -49,7 +49,7 @@ class TestWarnings:
 
         with warns(None) as record:
 
-            class A(Registrar):
+            class A(RegistrantFactory):
                 AUTO = False
                 CONVERT_NAME = lambda x: x
                 REPLACE = True

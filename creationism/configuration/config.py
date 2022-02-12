@@ -14,7 +14,7 @@ from creationism.mode import DEFAULT_MODE
 from creationism.registration.factory import RegistrantFactory
 from creationism.registration.utils import Text, chain_functions
 
-_REPLACE_IDENTIFIER = "\@replace=(True|true|False|false)"
+_REPLACE_IDENTIFIER = r"\@replace=(True|true|False|false)"
 _REFERENCE_START_SYMBOL = "$"
 _REFERENCE_MAP_SYMBOL = ":"
 _REFERENCE_ATTRIBUTE_SYMBOL = "."
@@ -30,18 +30,11 @@ class Config(RegistrantFactory):
 
     @classmethod
     def create(cls, class_type: type, config_value: "Config", *args, **kwargs):
-        try:
-            if cls.registered(class_type):
-                return super().create(
-                    class_type, config_value=config_value, *args, **kwargs
-                )
-            return ConfigObject(config_value, *args, **kwargs)
-        except TypeError as te:
-            raise te
-
-    @property
-    def replace(self):
-        return True
+        if cls.registered(class_type):
+            return super().create(
+                class_type, config_value=config_value, *args, **kwargs
+            )
+        return ConfigObject(config_value, *args, **kwargs)
 
     @abstractmethod
     def merge(self, config_value: "Config") -> None:
@@ -81,9 +74,6 @@ class ConfigObject(Config, UserObject):
 
     def build(self, configuration):
         return self
-
-    def __repr__(self):
-        return repr(self.data)
 
 
 @Config.register((str,))
@@ -204,12 +194,7 @@ class ConfigDict(Config, UserDict):
                 self.data[key].merge(config_value[key])
 
     def cast(self):
-        try:
-            return {key: value.cast() for key, value in self.items()}
-        except:
-            for key, value in self.items():
-                print(key, value, type(value))
-            raise ValueError()
+        return {key: value.cast() for key, value in self.items()}
 
     def build(self, configuration):
         registrar_module = self.data.pop("registrar_module", None)
@@ -251,6 +236,7 @@ class Configuration(ConfigDict):
         "config", "config.yml"
     )
     SEARCH_PATHS = ("", pathlib.Path(__file__).absolute().parent)
+    NAME = 'configuration'
 
     def __init__(self, name, config_value, modes, search_paths=()):
         self._modes = modes

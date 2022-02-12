@@ -1,0 +1,9 @@
+testconfiguration:
+  default:
+    s: string2
+    l@replace=false: [4,5,6] 
+    l2: [1,2,3]
+    d:
+      d_sub2: 2
+    d_replace:
+      d_sub2: 2
