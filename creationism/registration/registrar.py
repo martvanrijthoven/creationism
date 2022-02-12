@@ -92,6 +92,7 @@ class Registrar(ABC):
                         bases=base.__bases__,
                         registrant_names=registrant_names,
                         replace=replace,
+                        recursive=recursive,
                     )
                 cls._deinitialize_REGISTER()
 

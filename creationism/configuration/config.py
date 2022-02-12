@@ -159,21 +159,16 @@ class ConfigDict(Config, UserDict):
             if replace:
                 key_stripped = key.replace(replace.group(0), "")
                 replace = replace.group(1).lower() == "true"
-                self.data[key_stripped] = self._create_config(
-                    class_type, key, config_value, replace
+                self.data[key_stripped] = Config.create(
+                    class_type=class_type,
+                    config_value=config_value[key],
+                    replace=replace,
                 )
             else:
                 self.data[key] = Config.create(
                     class_type=class_type, config_value=config_value[key]
                 )
 
-    def _create_config(self, class_type, key, config_value, replace):
-        try:
-            return Config.create(
-                class_type=class_type, config_value=config_value[key], replace=replace
-            )
-        except TypeError:
-            raise ValueError("create config error")
 
     def merge(self, config_value):
         if not isinstance(config_value, ConfigDict):
@@ -236,7 +231,7 @@ class Configuration(ConfigDict):
         "config", "config.yml"
     )
     SEARCH_PATHS = ("", pathlib.Path(__file__).absolute().parent)
-    NAME = 'configuration'
+    NAME = "configuration"
 
     def __init__(self, name, config_value, modes, search_paths=()):
         self._modes = modes
@@ -277,7 +272,9 @@ class Configuration(ConfigDict):
         configuration = resolve_modes(configuration, modes=modes)
         resolve_none(configuration)
         if build_instances:
-            return configuration.build_instances(external_configurations=external_configurations, build_key=build_key)
+            return configuration.build_instances(
+                external_configurations=external_configurations, build_key=build_key
+            )
         return configuration
 
     @property
@@ -301,7 +298,7 @@ class Configuration(ConfigDict):
             if build_key is not None:
                 index = build_keys.index(build_key) + 1
                 build_keys = build_keys[:index]
-            
+
             for key in build_keys:
                 build[mode][key] = build[mode][key].build(configurations)
 
@@ -315,14 +312,11 @@ def get_module(module):
     try:
         return importlib.import_module(module)
     except Exception:
-        try:
-            module = Path(module)
-            spec = importlib.util.spec_from_file_location(module.stem, str(module))
-            module = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(module)
-        except AttributeError:
-            raise ImportError(f"failed to load module: {module}")
-    return module
+        module = Path(module)
+        spec = importlib.util.spec_from_file_location(module.stem, str(module))
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
 
 
 def _build_object(builds, module, attribute):
