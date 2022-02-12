@@ -28,6 +28,11 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
+      - name: Install dependencies
+        shell: bash
+        run: |
+          pip install -r requirements.txt
+
       - name: Generate coverage report
         run: |
           pip install pytest
