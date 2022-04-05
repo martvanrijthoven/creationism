@@ -260,6 +260,9 @@ class Configuration(ConfigDict):
         else:
             search_paths = cls.SEARCH_PATHS + search_paths
 
+        if cls.NAME in user_config:
+            user_config = user_config[cls.NAME]
+
         include_configs(user_config, search_paths=search_paths)
         configuration = cls(*args, **kwargs)
         for preset in presets:
@@ -325,6 +328,9 @@ def _build_object(builds, module, attribute):
     attribute = module
     for attr in attributes:
         attribute = getattr(attribute, attr)
+
+    if '__return_type' in builds:
+        return attribute
     return attribute(**builds.cast())
 
 
@@ -369,7 +375,13 @@ def include_configs(config, search_paths=()):
         if isinstance(v, dict):
             include_configs(v, search_paths)
 
+        if isinstance(v, list):
+            for v_item in v:
+                if isinstance(v_item, dict):
+                    include_configs(v_item, search_paths)
+
         elif isinstance(
             v, str
         ) and ConfigurationFileExtension.is_configuration_extension_path(v):
             config[k] = open_config(v, search_paths)
+            include_configs(config, search_paths)
