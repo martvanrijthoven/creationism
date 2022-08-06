@@ -1,0 +1,6 @@
+creationism.configuration.validation.check\_user\_config
+========================================================
+
+.. currentmodule:: creationism.configuration.validation
+
+.. autofunction:: check_user_config

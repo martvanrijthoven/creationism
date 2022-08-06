@@ -1,17 +1,21 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index &#8212; creationism 0.0.5 documentation</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
 
-    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
   <link rel="stylesheet"
     href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
@@ -20,43 +24,52 @@
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    
+
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
 
     
-    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
 
   <div id="navbar-start">
     
     
-<a class="navbar-brand" href="index.html">
-<p class="title">creationism</p>
-</a>
+  
 
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">creationism 0.0.5 documentation</p>
+  
+</a>
     
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="fas fa-bars"></span>
   </button>
 
   
@@ -80,6 +93,14 @@
     <div id="navbar-end">
       
       <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
         <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
       </ul>
       </div>
@@ -90,13 +111,13 @@
     </nav>
     
 
-    <div class="container-xl">
-      <div class="row">
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
           
-            
-            <!-- Only show if we have sidebars configured, else just a small margin  -->
-            <div class="col-12 col-md-3 bd-sidebar">
-              <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
@@ -104,26 +125,25 @@
     
   </div>
 </nav>
-              </div>
-              <div class="sidebar-end-items">
-              </div>
-            </div>
-            
-          
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
 
           
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-            
-          </div>
-          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+</div>
+
 
           
           
-            
-          
-          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+          <div class="bd-content col-12 col-md-9 col-xl-7">
               
-              <div>
+              <article class="bd-article" role="main">
                 
 
 <h1 id="index">Index</h1>
@@ -154,18 +174,26 @@
 <h2 id="_">_</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.Config.html#creationism.configuration.config.Config.__init__">__init__() (Config method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configbase.ConfigBase.html#creationism.configuration.types.configbase.ConfigBase.__init__">__init__() (ConfigBase method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.__init__">(ConfigDict method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configbool.ConfigBool.html#creationism.configuration.types.configbool.ConfigBool.__init__">(ConfigBool method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.__init__">(ConfigList method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.__init__">(ConfigDict method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigObject.html#creationism.configuration.config.ConfigObject.__init__">(ConfigObject method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configfloat.ConfigFloat.html#creationism.configuration.types.configfloat.ConfigFloat.__init__">(ConfigFloat method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.__init__">(ConfigString method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configinstance.ConfigInstance.html#creationism.configuration.types.configinstance.ConfigInstance.__init__">(ConfigInstance method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.__init__">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configint.ConfigInt.html#creationism.configuration.types.configint.ConfigInt.__init__">(ConfigInt method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.__init__">(ConfigList method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.confignone.ConfigNone.html#creationism.configuration.types.confignone.ConfigNone.__init__">(ConfigNone method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configstring.ConfigString.html#creationism.configuration.types.configstring.ConfigString.__init__">(ConfigString method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.__init__">(Configuration method)</a>
 </li>
         <li><a href="_autosummary/creationism.configuration.extensions.ConfigurationFileExtension.html#creationism.configuration.extensions.ConfigurationFileExtension.__init__">(ConfigurationFileExtension method)</a>
 </li>
@@ -183,7 +211,17 @@
 </li>
         <li><a href="_autosummary/creationism.registration.utils.Text.html#creationism.registration.utils.Text.__init__">(Text method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.UserObject.html#creationism.configuration.config.UserObject.__init__">(UserObject method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.user.UserBool.html#creationism.configuration.types.user.UserBool.__init__">(UserBool method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.user.UserFloat.html#creationism.configuration.types.user.UserFloat.__init__">(UserFloat method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.user.UserInstance.html#creationism.configuration.types.user.UserInstance.__init__">(UserInstance method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.user.UserInt.html#creationism.configuration.types.user.UserInt.__init__">(UserInt method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.user.UserNone.html#creationism.configuration.types.user.UserNone.__init__">(UserNone method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.user.UserObject.html#creationism.configuration.types.user.UserObject.__init__">(UserObject method)</a>
 </li>
         <li><a href="_autosummary/creationism.configuration.extensions.YamlConfigurationFileExtension.html#creationism.configuration.extensions.YamlConfigurationFileExtension.__init__">(YamlConfigurationFileExtension method)</a>
 </li>
@@ -194,7 +232,7 @@
 <h2 id="A">A</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.append">append() (ConfigList method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.append">append() (ConfigList method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -202,82 +240,78 @@
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.Config.html#creationism.configuration.config.Config.build">build() (Config method)</a>
-
-      <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.build">(ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.build.build_object.html#creationism.configuration.build.build_object">build_object() (in module creationism.configuration.build)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.build">(ConfigList method)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_autosummary/creationism.configuration.build.build_registrant_object.html#creationism.configuration.build.build_registrant_object">build_registrant_object() (in module creationism.configuration.build)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigObject.html#creationism.configuration.config.ConfigObject.build">(ConfigObject method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.build">(ConfigString method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.build">(Configuration class method)</a>
-</li>
-      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.Config.html#creationism.configuration.config.Config.cast">cast() (Config method)</a>
-
-      <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.cast">(ConfigDict method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.cast">(ConfigList method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigObject.html#creationism.configuration.config.ConfigObject.cast">(ConfigObject method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.cast">(ConfigString method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.cast">(Configuration method)</a>
-</li>
-      </ul></li>
       <li><a href="_autosummary/creationism.registration.utils.chain_functions.html#creationism.registration.utils.chain_functions">chain_functions() (in module creationism.registration.utils)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.clear">clear() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.validation.check_user_config.html#creationism.configuration.validation.check_user_config">check_user_config() (in module creationism.configuration.validation)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.clear">clear() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.clear">(ConfigList method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.clear">(ConfigList method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.clear">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.clear">(Configuration method)</a>
 </li>
       </ul></li>
-      <li><a href="_autosummary/creationism.configuration.config.Config.html#creationism.configuration.config.Config">Config (class in creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configbase.ConfigBase.html#creationism.configuration.types.configbase.ConfigBase">ConfigBase (class in creationism.configuration.types.configbase)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict">ConfigDict (class in creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configbool.ConfigBool.html#creationism.configuration.types.configbool.ConfigBool">ConfigBool (class in creationism.configuration.types.configbool)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList">ConfigList (class in creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict">ConfigDict (class in creationism.configuration.types.configdict)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigObject.html#creationism.configuration.config.ConfigObject">ConfigObject (class in creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configfloat.ConfigFloat.html#creationism.configuration.types.configfloat.ConfigFloat">ConfigFloat (class in creationism.configuration.types.configfloat)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString">ConfigString (class in creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configinstance.ConfigInstance.html#creationism.configuration.types.configinstance.ConfigInstance">ConfigInstance (class in creationism.configuration.types.configinstance)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration">Configuration (class in creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configint.ConfigInt.html#creationism.configuration.types.configint.ConfigInt">ConfigInt (class in creationism.configuration.types.configint)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList">ConfigList (class in creationism.configuration.types.configlist)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.confignone.ConfigNone.html#creationism.configuration.types.confignone.ConfigNone">ConfigNone (class in creationism.configuration.types.confignone)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.configstring.ConfigString.html#creationism.configuration.types.configstring.ConfigString">ConfigString (class in creationism.configuration.types.configstring)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration">Configuration (class in creationism.configuration.types.configuration)</a>
 </li>
       <li><a href="_autosummary/creationism.configuration.extensions.ConfigurationFileExtension.html#creationism.configuration.extensions.ConfigurationFileExtension">ConfigurationFileExtension (class in creationism.configuration.extensions)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.count">count() (ConfigList method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.count">count() (ConfigList method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.count">(ConfigString method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configstring.ConfigString.html#creationism.configuration.types.configstring.ConfigString.count">(ConfigString method)</a>
 </li>
       </ul></li>
-      <li><a href="_autosummary/creationism.configuration.config.Config.html#creationism.configuration.config.Config.create">create() (Config class method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configbase.ConfigBase.html#creationism.configuration.types.configbase.ConfigBase.create">create() (ConfigBase class method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.create">(ConfigDict class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configbool.ConfigBool.html#creationism.configuration.types.configbool.ConfigBool.create">(ConfigBool class method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.create">(ConfigList class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.create">(ConfigDict class method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigObject.html#creationism.configuration.config.ConfigObject.create">(ConfigObject class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configfloat.ConfigFloat.html#creationism.configuration.types.configfloat.ConfigFloat.create">(ConfigFloat class method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.create">(ConfigString class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configinstance.ConfigInstance.html#creationism.configuration.types.configinstance.ConfigInstance.create">(ConfigInstance class method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.create">(Configuration class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configint.ConfigInt.html#creationism.configuration.types.configint.ConfigInt.create">(ConfigInt class method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.create">(ConfigList class method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.confignone.ConfigNone.html#creationism.configuration.types.confignone.ConfigNone.create">(ConfigNone class method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configstring.ConfigString.html#creationism.configuration.types.configstring.ConfigString.create">(ConfigString class method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.create">(Configuration class method)</a>
 </li>
         <li><a href="_autosummary/creationism.configuration.extensions.ConfigurationFileExtension.html#creationism.configuration.extensions.ConfigurationFileExtension.create">(ConfigurationFileExtension class method)</a>
 </li>
@@ -294,8 +328,6 @@
         <li><a href="_autosummary/creationism.configuration.extensions.YamlConfigurationFileExtension.html#creationism.configuration.extensions.YamlConfigurationFileExtension.create">(YamlConfigurationFileExtension class method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_autosummary/creationism.utils.create_name_from_class_name.html#creationism.utils.create_name_from_class_name">create_name_from_class_name() (in module creationism.utils)</a>
 </li>
       <li>
@@ -313,10 +345,17 @@
 </li>
       </ul></li>
       <li>
-    creationism.configuration.config
+    creationism.configuration.build
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.html#module-creationism.configuration.config">module</a>
+        <li><a href="_autosummary/creationism.configuration.build.html#module-creationism.configuration.build">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.constants
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.constants.html#module-creationism.configuration.constants">module</a>
 </li>
       </ul></li>
       <li>
@@ -324,6 +363,106 @@
 
       <ul>
         <li><a href="_autosummary/creationism.configuration.extensions.html#module-creationism.configuration.extensions">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    creationism.configuration.types
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.html#module-creationism.configuration.types">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configbase
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configbase.html#module-creationism.configuration.types.configbase">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configbool
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configbool.html#module-creationism.configuration.types.configbool">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configdict
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configdict.html#module-creationism.configuration.types.configdict">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configfloat
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configfloat.html#module-creationism.configuration.types.configfloat">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configinstance
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configinstance.html#module-creationism.configuration.types.configinstance">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configint
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configint.html#module-creationism.configuration.types.configint">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configlist
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configlist.html#module-creationism.configuration.types.configlist">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.confignone
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.confignone.html#module-creationism.configuration.types.confignone">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configstring
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configstring.html#module-creationism.configuration.types.configstring">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.configuration
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.html#module-creationism.configuration.types.configuration">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.user
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.user.html#module-creationism.configuration.types.user">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.types.utils
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.types.utils.html#module-creationism.configuration.types.utils">module</a>
+</li>
+      </ul></li>
+      <li>
+    creationism.configuration.validation
+
+      <ul>
+        <li><a href="_autosummary/creationism.configuration.validation.html#module-creationism.configuration.validation">module</a>
 </li>
       </ul></li>
       <li>
@@ -392,6 +531,8 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_autosummary/creationism.configuration.types.utils.determine_replace.html#creationism.configuration.types.utils.determine_replace">determine_replace() (in module creationism.configuration.types.utils)</a>
+</li>
       <li><a href="_autosummary/creationism.registration.warnings.DuplicateRegistrantNameWarning.html#creationism.registration.warnings.DuplicateRegistrantNameWarning">DuplicateRegistrantNameWarning</a>
 </li>
   </ul></td>
@@ -400,7 +541,7 @@
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.extend">extend() (ConfigList method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.extend">extend() (ConfigList method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -420,15 +561,15 @@
 <h2 id="G">G</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.get">get() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.get">get() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.get">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.get">(Configuration method)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.get_module.html#creationism.configuration.config.get_module">get_module() (in module creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.build.get_module.html#creationism.configuration.build.get_module">get_module() (in module creationism.configuration.build)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -436,22 +577,22 @@
 <h2 id="I">I</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.include_configs.html#creationism.configuration.config.include_configs">include_configs() (in module creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configuration.include_configs.html#creationism.configuration.types.configuration.include_configs">include_configs() (in module creationism.configuration.types.configuration)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.index">index() (ConfigList method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.index">index() (ConfigList method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.index">(ConfigString method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configstring.ConfigString.html#creationism.configuration.types.configstring.ConfigString.index">(ConfigString method)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.insert">insert() (ConfigList method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.insert">insert() (ConfigList method)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.items">items() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.items">items() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.items">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.items">(Configuration method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -468,10 +609,10 @@
 <h2 id="K">K</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.keys">keys() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.keys">keys() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.keys">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.keys">(Configuration method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -480,22 +621,10 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.maketrans">maketrans() (ConfigString method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configstring.ConfigString.html#creationism.configuration.types.configstring.ConfigString.maketrans">maketrans() (ConfigString method)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.Config.html#creationism.configuration.config.Config.merge">merge() (Config method)</a>
-
-      <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.merge">(ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.merge">merge() (ConfigList method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.merge">(ConfigList method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigObject.html#creationism.configuration.config.ConfigObject.merge">(ConfigObject method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.merge">(ConfigString method)</a>
-</li>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.merge">(Configuration method)</a>
-</li>
-      </ul></li>
       <li><a href="_autosummary/creationism.mode.Mode.html#creationism.mode.Mode">Mode (class in creationism.mode)</a>
 </li>
       <li>
@@ -506,9 +635,39 @@
 </li>
         <li><a href="_autosummary/creationism.configuration.html#module-creationism.configuration">creationism.configuration</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.html#module-creationism.configuration.config">creationism.configuration.config</a>
+        <li><a href="_autosummary/creationism.configuration.build.html#module-creationism.configuration.build">creationism.configuration.build</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.constants.html#module-creationism.configuration.constants">creationism.configuration.constants</a>
 </li>
         <li><a href="_autosummary/creationism.configuration.extensions.html#module-creationism.configuration.extensions">creationism.configuration.extensions</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.html#module-creationism.configuration.types">creationism.configuration.types</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configbase.html#module-creationism.configuration.types.configbase">creationism.configuration.types.configbase</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configbool.html#module-creationism.configuration.types.configbool">creationism.configuration.types.configbool</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configdict.html#module-creationism.configuration.types.configdict">creationism.configuration.types.configdict</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configfloat.html#module-creationism.configuration.types.configfloat">creationism.configuration.types.configfloat</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configinstance.html#module-creationism.configuration.types.configinstance">creationism.configuration.types.configinstance</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configint.html#module-creationism.configuration.types.configint">creationism.configuration.types.configint</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configlist.html#module-creationism.configuration.types.configlist">creationism.configuration.types.configlist</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.confignone.html#module-creationism.configuration.types.confignone">creationism.configuration.types.confignone</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configstring.html#module-creationism.configuration.types.configstring">creationism.configuration.types.configstring</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.html#module-creationism.configuration.types.configuration">creationism.configuration.types.configuration</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.user.html#module-creationism.configuration.types.user">creationism.configuration.types.user</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.utils.html#module-creationism.configuration.types.utils">creationism.configuration.types.utils</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.validation.html#module-creationism.configuration.validation">creationism.configuration.validation</a>
 </li>
         <li><a href="_autosummary/creationism.extension.html#module-creationism.extension">creationism.extension</a>
 </li>
@@ -555,20 +714,20 @@
 <h2 id="P">P</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.pop">pop() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.pop">pop() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.pop">(ConfigList method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.pop">(ConfigList method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.pop">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.pop">(Configuration method)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.popitem">popitem() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.popitem">popitem() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.popitem">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.popitem">(Configuration method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -577,18 +736,26 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.Config.html#creationism.configuration.config.Config.register">register() (Config class method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configbase.ConfigBase.html#creationism.configuration.types.configbase.ConfigBase.register">register() (ConfigBase class method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.register">(ConfigDict class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configbool.ConfigBool.html#creationism.configuration.types.configbool.ConfigBool.register">(ConfigBool class method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.register">(ConfigList class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.register">(ConfigDict class method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigObject.html#creationism.configuration.config.ConfigObject.register">(ConfigObject class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configfloat.ConfigFloat.html#creationism.configuration.types.configfloat.ConfigFloat.register">(ConfigFloat class method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.ConfigString.html#creationism.configuration.config.ConfigString.register">(ConfigString class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configinstance.ConfigInstance.html#creationism.configuration.types.configinstance.ConfigInstance.register">(ConfigInstance class method)</a>
 </li>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.register">(Configuration class method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configint.ConfigInt.html#creationism.configuration.types.configint.ConfigInt.register">(ConfigInt class method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.register">(ConfigList class method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.confignone.ConfigNone.html#creationism.configuration.types.confignone.ConfigNone.register">(ConfigNone class method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configstring.ConfigString.html#creationism.configuration.types.configstring.ConfigString.register">(ConfigString class method)</a>
+</li>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.register">(Configuration class method)</a>
 </li>
         <li><a href="_autosummary/creationism.configuration.extensions.ConfigurationFileExtension.html#creationism.configuration.extensions.ConfigurationFileExtension.register">(ConfigurationFileExtension class method)</a>
 </li>
@@ -615,13 +782,13 @@
 </li>
       <li><a href="_autosummary/creationism.registration.registrar.Registrar.html#creationism.registration.registrar.Registrar">Registrar (class in creationism.registration.registrar)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.remove">remove() (ConfigList method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.remove">remove() (ConfigList method)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.resolve_modes.html#creationism.configuration.config.resolve_modes">resolve_modes() (in module creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configuration.resolve_modes.html#creationism.configuration.types.configuration.resolve_modes">resolve_modes() (in module creationism.configuration.types.configuration)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.resolve_none.html#creationism.configuration.config.resolve_none">resolve_none() (in module creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configuration.resolve_none.html#creationism.configuration.types.configuration.resolve_none">resolve_none() (in module creationism.configuration.types.configuration)</a>
 </li>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigList.html#creationism.configuration.config.ConfigList.reverse">reverse() (ConfigList method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configlist.ConfigList.html#creationism.configuration.types.configlist.ConfigList.reverse">reverse() (ConfigList method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -629,10 +796,10 @@
 <h2 id="S">S</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.setdefault">setdefault() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.setdefault">setdefault() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.setdefault">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.setdefault">(Configuration method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -649,15 +816,25 @@
 <h2 id="U">U</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.update">update() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.update">update() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.update">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.update">(Configuration method)</a>
 </li>
       </ul></li>
+      <li><a href="_autosummary/creationism.configuration.types.user.UserBool.html#creationism.configuration.types.user.UserBool">UserBool (class in creationism.configuration.types.user)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.user.UserFloat.html#creationism.configuration.types.user.UserFloat">UserFloat (class in creationism.configuration.types.user)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.UserObject.html#creationism.configuration.config.UserObject">UserObject (class in creationism.configuration.config)</a>
+      <li><a href="_autosummary/creationism.configuration.types.user.UserInstance.html#creationism.configuration.types.user.UserInstance">UserInstance (class in creationism.configuration.types.user)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.user.UserInt.html#creationism.configuration.types.user.UserInt">UserInt (class in creationism.configuration.types.user)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.user.UserNone.html#creationism.configuration.types.user.UserNone">UserNone (class in creationism.configuration.types.user)</a>
+</li>
+      <li><a href="_autosummary/creationism.configuration.types.user.UserObject.html#creationism.configuration.types.user.UserObject">UserObject (class in creationism.configuration.types.user)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -665,10 +842,10 @@
 <h2 id="V">V</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_autosummary/creationism.configuration.config.ConfigDict.html#creationism.configuration.config.ConfigDict.values">values() (ConfigDict method)</a>
+      <li><a href="_autosummary/creationism.configuration.types.configdict.ConfigDict.html#creationism.configuration.types.configdict.ConfigDict.values">values() (ConfigDict method)</a>
 
       <ul>
-        <li><a href="_autosummary/creationism.configuration.config.Configuration.html#creationism.configuration.config.Configuration.values">(Configuration method)</a>
+        <li><a href="_autosummary/creationism.configuration.types.configuration.Configuration.html#creationism.configuration.types.configuration.Configuration.values">(Configuration method)</a>
 </li>
       </ul></li>
   </ul></td>
@@ -684,37 +861,41 @@
 
 
 
-              </div>
+              </article>
               
+
               
-              <!-- Previous / next buttons -->
+              <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
 <div class='prev-next-area'>
 </div>
+              </footer>
               
-          </main>
+          </div>
           
-
       </div>
     </div>
+
+  
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-<footer class="footer mt-5 mt-md-0">
-  <div class="container">
-    
-    <div class="footer-item">
-      <p class="copyright">
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
     &copy; Copyright 2022, Mart van Rijthoven.<br>
 </p>
-    </div>
-    
-    <div class="footer-item">
-      <p class="sphinx-version">
-Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
-</p>
-    </div>
-    
   </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
 </footer>
   </body>
 </html>

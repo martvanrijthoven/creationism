@@ -28,6 +28,9 @@ creationism.configuration
    :template: custom-module-template.rst                 
    :recursive:
 
-   creationism.configuration.config
+   creationism.configuration.build
+   creationism.configuration.constants
    creationism.configuration.extensions
+   creationism.configuration.types
+   creationism.configuration.validation
 

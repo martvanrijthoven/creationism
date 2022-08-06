@@ -1,6 +1,0 @@
-creationism.configuration.config.include\_configs
-=================================================
-
-.. currentmodule:: creationism.configuration.config
-
-.. autofunction:: include_configs

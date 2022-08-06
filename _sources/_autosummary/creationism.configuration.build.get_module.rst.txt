@@ -1,0 +1,6 @@
+creationism.configuration.build.get\_module
+===========================================
+
+.. currentmodule:: creationism.configuration.build
+
+.. autofunction:: get_module

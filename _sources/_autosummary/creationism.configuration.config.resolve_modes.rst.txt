@@ -1,6 +1,0 @@
-creationism.configuration.config.resolve\_modes
-===============================================
-
-.. currentmodule:: creationism.configuration.config
-
-.. autofunction:: resolve_modes

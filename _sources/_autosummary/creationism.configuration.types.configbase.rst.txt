@@ -1,0 +1,31 @@
+creationism.configuration.types.configbase
+==========================================
+
+.. automodule:: creationism.configuration.types.configbase
+  
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:                                         
+      :template: custom-class-template.rst               
+   
+      ConfigBase
+   
+   
+
+   
+   
+   
+
+
+

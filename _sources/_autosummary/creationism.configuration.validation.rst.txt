@@ -1,0 +1,30 @@
+creationism.configuration.validation
+====================================
+
+.. automodule:: creationism.configuration.validation
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      check_user_config
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,40 @@
+creationism.configuration.types.configuration
+=============================================
+
+.. automodule:: creationism.configuration.types.configuration
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      include_configs
+      resolve_modes
+      resolve_none
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:                                         
+      :template: custom-class-template.rst               
+   
+      Configuration
+   
+   
+
+   
+   
+   
+
+
+

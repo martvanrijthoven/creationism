@@ -1,0 +1,32 @@
+creationism.configuration.build
+===============================
+
+.. automodule:: creationism.configuration.build
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      build_object
+      build_registrant_object
+      get_module
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

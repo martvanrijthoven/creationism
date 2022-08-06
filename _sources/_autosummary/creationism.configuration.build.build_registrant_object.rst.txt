@@ -1,0 +1,6 @@
+creationism.configuration.build.build\_registrant\_object
+=========================================================
+
+.. currentmodule:: creationism.configuration.build
+
+.. autofunction:: build_registrant_object

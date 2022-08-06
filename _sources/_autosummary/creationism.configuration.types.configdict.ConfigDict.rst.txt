@@ -1,0 +1,58 @@
+creationism.configuration.types.configdict.ConfigDict
+=====================================================
+
+.. currentmodule:: creationism.configuration.types.configdict
+
+.. autoclass:: ConfigDict
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ConfigDict.CONVERT_NAME
+      ~ConfigDict.__init__
+      ~ConfigDict.build
+      ~ConfigDict.cast
+      ~ConfigDict.class_name
+      ~ConfigDict.clear
+      ~ConfigDict.copy
+      ~ConfigDict.create
+      ~ConfigDict.fromkeys
+      ~ConfigDict.get
+      ~ConfigDict.get_registrant
+      ~ConfigDict.items
+      ~ConfigDict.keys
+      ~ConfigDict.merge
+      ~ConfigDict.names
+      ~ConfigDict.pop
+      ~ConfigDict.popitem
+      ~ConfigDict.register
+      ~ConfigDict.register_func
+      ~ConfigDict.registered
+      ~ConfigDict.setdefault
+      ~ConfigDict.update
+      ~ConfigDict.values
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ConfigDict.AUTO
+      ~ConfigDict.RECURSIVE
+      ~ConfigDict.REPLACE
+      ~ConfigDict.STATIC
+      ~ConfigDict.name
+      ~ConfigDict.replace
+   
+   

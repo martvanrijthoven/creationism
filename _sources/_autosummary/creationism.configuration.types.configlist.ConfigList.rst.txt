@@ -1,0 +1,58 @@
+creationism.configuration.types.configlist.ConfigList
+=====================================================
+
+.. currentmodule:: creationism.configuration.types.configlist
+
+.. autoclass:: ConfigList
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ConfigList.CONVERT_NAME
+      ~ConfigList.__init__
+      ~ConfigList.append
+      ~ConfigList.build
+      ~ConfigList.cast
+      ~ConfigList.class_name
+      ~ConfigList.clear
+      ~ConfigList.copy
+      ~ConfigList.count
+      ~ConfigList.create
+      ~ConfigList.extend
+      ~ConfigList.get_registrant
+      ~ConfigList.index
+      ~ConfigList.insert
+      ~ConfigList.merge
+      ~ConfigList.names
+      ~ConfigList.pop
+      ~ConfigList.register
+      ~ConfigList.register_func
+      ~ConfigList.registered
+      ~ConfigList.remove
+      ~ConfigList.reverse
+      ~ConfigList.sort
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ConfigList.AUTO
+      ~ConfigList.RECURSIVE
+      ~ConfigList.REPLACE
+      ~ConfigList.STATIC
+      ~ConfigList.name
+      ~ConfigList.replace
+   
+   

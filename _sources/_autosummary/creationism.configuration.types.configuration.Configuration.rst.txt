@@ -1,0 +1,63 @@
+creationism.configuration.types.configuration.Configuration
+===========================================================
+
+.. currentmodule:: creationism.configuration.types.configuration
+
+.. autoclass:: Configuration
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Configuration.CONVERT_NAME
+      ~Configuration.__init__
+      ~Configuration.build
+      ~Configuration.build_instances
+      ~Configuration.cast
+      ~Configuration.class_name
+      ~Configuration.clear
+      ~Configuration.copy
+      ~Configuration.create
+      ~Configuration.fromkeys
+      ~Configuration.get
+      ~Configuration.get_registrant
+      ~Configuration.items
+      ~Configuration.keys
+      ~Configuration.merge
+      ~Configuration.names
+      ~Configuration.pop
+      ~Configuration.popitem
+      ~Configuration.register
+      ~Configuration.register_func
+      ~Configuration.registered
+      ~Configuration.setdefault
+      ~Configuration.update
+      ~Configuration.values
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Configuration.AUTO
+      ~Configuration.CONFIG_PATH
+      ~Configuration.NAME
+      ~Configuration.PRESETS_FOLDER
+      ~Configuration.RECURSIVE
+      ~Configuration.REPLACE
+      ~Configuration.SEARCH_PATHS
+      ~Configuration.STATIC
+      ~Configuration.name
+      ~Configuration.replace
+   
+   

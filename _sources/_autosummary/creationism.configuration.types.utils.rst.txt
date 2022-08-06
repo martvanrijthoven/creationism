@@ -1,0 +1,30 @@
+creationism.configuration.types.utils
+=====================================
+
+.. automodule:: creationism.configuration.types.utils
+  
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:                                          
+   
+      determine_replace
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
