@@ -1,7 +1,6 @@
 import os
-from creationism.configuration.config import Configuration
-from creationism.configuration.config import open_config
-from creationism.configuration.extensions import ConfigurationFileExtension, JsonConfigurationFileExtension
+from creationism.configuration.types.configuration import Configuration
+from creationism.configuration.extensions import open_config, ConfigurationFileExtension, JsonConfigurationFileExtension
 from creationism.mode import Mode, DefaultMode
 from pathlib import Path
 
