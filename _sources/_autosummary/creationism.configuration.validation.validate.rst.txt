@@ -1,6 +1,0 @@
-creationism.configuration.validation.validate
-=============================================
-
-.. currentmodule:: creationism.configuration.validation
-
-.. autofunction:: validate

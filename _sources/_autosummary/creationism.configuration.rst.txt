@@ -32,5 +32,4 @@ creationism.configuration
    creationism.configuration.constants
    creationism.configuration.extensions
    creationism.configuration.types
-   creationism.configuration.validation
 
