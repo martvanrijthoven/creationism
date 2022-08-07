@@ -150,10 +150,19 @@
 <span class="kn">from</span> <span class="nn">creationism.registration.utils</span> <span class="kn">import</span> <span class="n">Text</span><span class="p">,</span> <span class="n">chain_functions</span>
 <span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">partial</span>
 
+
 <div class="viewcode-block" id="ConfigBase"><a class="viewcode-back" href="../../../../_autosummary/creationism.configuration.types.configbase.ConfigBase.html#creationism.configuration.types.configbase.ConfigBase">[docs]</a><span class="k">class</span> <span class="nc">ConfigBase</span><span class="p">(</span><span class="n">RegistrantFactory</span><span class="p">):</span>
     <span class="n">CONVERT_NAME</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">chain_functions</span><span class="p">(</span>
         <span class="n">x</span><span class="p">,</span> <span class="n">Text</span><span class="o">.</span><span class="n">split_capitals</span><span class="p">,</span> <span class="n">Text</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="n">Text</span><span class="o">.</span><span class="n">split</span><span class="p">,</span> <span class="n">partial</span><span class="p">(</span><span class="n">Text</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">index</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
     <span class="p">)</span>
+
+<div class="viewcode-block" id="ConfigBase.__init__"><a class="viewcode-back" href="../../../../_autosummary/creationism.configuration.types.configbase.ConfigBase.html#creationism.configuration.types.configbase.ConfigBase.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_replace</span> <span class="o">=</span> <span class="n">replace</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">replace</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_replace</span>
 
     <span class="k">def</span> <span class="nf">merge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config_value</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">config_value</span><span class="o">.</span><span class="n">data</span>
@@ -162,7 +171,39 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span>
 
     <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">configuration</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span></div>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">determine_replace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config2</span><span class="p">:</span> <span class="s2">&quot;ConfigBase&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">config2</span><span class="o">.</span><span class="n">replace</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">config2</span><span class="o">.</span><span class="n">replace</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">replace</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">replace</span>
+        <span class="k">return</span> <span class="n">config2</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">REPLACE</span></div>
+
+
+
+<div class="viewcode-block" id="ConfigObject"><a class="viewcode-back" href="../../../../_autosummary/creationism.configuration.types.configbase.ConfigObject.html#creationism.configuration.types.configbase.ConfigObject">[docs]</a><span class="k">class</span> <span class="nc">ConfigObject</span><span class="p">(</span><span class="n">ConfigBase</span><span class="p">):</span>
+    <span class="o">...</span></div>
+
+
+<div class="viewcode-block" id="ConfigInt"><a class="viewcode-back" href="../../../../_autosummary/creationism.configuration.types.configbase.ConfigInt.html#creationism.configuration.types.configbase.ConfigInt">[docs]</a><span class="nd">@ConfigBase</span><span class="o">.</span><span class="n">register</span><span class="p">((</span><span class="nb">int</span><span class="p">,))</span>
+<span class="k">class</span> <span class="nc">ConfigInt</span><span class="p">(</span><span class="n">ConfigBase</span><span class="p">):</span>
+    <span class="o">...</span></div>
+
+
+<div class="viewcode-block" id="ConfigFloat"><a class="viewcode-back" href="../../../../_autosummary/creationism.configuration.types.configbase.ConfigFloat.html#creationism.configuration.types.configbase.ConfigFloat">[docs]</a><span class="nd">@ConfigBase</span><span class="o">.</span><span class="n">register</span><span class="p">((</span><span class="nb">float</span><span class="p">,))</span>
+<span class="k">class</span> <span class="nc">ConfigFloat</span><span class="p">(</span><span class="n">ConfigBase</span><span class="p">):</span>
+    <span class="o">...</span></div>
+
+
+<div class="viewcode-block" id="ConfigBool"><a class="viewcode-back" href="../../../../_autosummary/creationism.configuration.types.configbase.ConfigBool.html#creationism.configuration.types.configbase.ConfigBool">[docs]</a><span class="nd">@ConfigBase</span><span class="o">.</span><span class="n">register</span><span class="p">((</span><span class="nb">bool</span><span class="p">,))</span>
+<span class="k">class</span> <span class="nc">ConfigBool</span><span class="p">(</span><span class="n">ConfigBase</span><span class="p">):</span>
+    <span class="o">...</span></div>
+
+
+<div class="viewcode-block" id="ConfigNone"><a class="viewcode-back" href="../../../../_autosummary/creationism.configuration.types.configbase.ConfigNone.html#creationism.configuration.types.configbase.ConfigNone">[docs]</a><span class="nd">@ConfigBase</span><span class="o">.</span><span class="n">register</span><span class="p">((</span><span class="nb">type</span><span class="p">(</span><span class="kc">None</span><span class="p">),))</span>
+<span class="k">class</span> <span class="nc">ConfigNone</span><span class="p">(</span><span class="n">ConfigBase</span><span class="p">):</span>
+    <span class="o">...</span></div>
 </pre></div>
 
               </article>

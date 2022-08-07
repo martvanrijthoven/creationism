@@ -1,0 +1,48 @@
+creationism.configuration.types.configbase.ConfigInt
+====================================================
+
+.. currentmodule:: creationism.configuration.types.configbase
+
+.. autoclass:: ConfigInt
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ConfigInt.CONVERT_NAME
+      ~ConfigInt.__init__
+      ~ConfigInt.build
+      ~ConfigInt.cast
+      ~ConfigInt.class_name
+      ~ConfigInt.create
+      ~ConfigInt.determine_replace
+      ~ConfigInt.get_registrant
+      ~ConfigInt.merge
+      ~ConfigInt.names
+      ~ConfigInt.register
+      ~ConfigInt.register_func
+      ~ConfigInt.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ConfigInt.AUTO
+      ~ConfigInt.RECURSIVE
+      ~ConfigInt.REPLACE
+      ~ConfigInt.STATIC
+      ~ConfigInt.name
+      ~ConfigInt.replace
+   
+   

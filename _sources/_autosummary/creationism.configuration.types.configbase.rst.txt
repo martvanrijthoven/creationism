@@ -20,6 +20,11 @@ creationism.configuration.types.configbase
       :template: custom-class-template.rst               
    
       ConfigBase
+      ConfigBool
+      ConfigFloat
+      ConfigInt
+      ConfigNone
+      ConfigObject
    
    
 

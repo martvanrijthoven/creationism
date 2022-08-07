@@ -24,6 +24,7 @@ creationism.configuration.types.configdict.ConfigDict
       ~ConfigDict.clear
       ~ConfigDict.copy
       ~ConfigDict.create
+      ~ConfigDict.determine_replace
       ~ConfigDict.fromkeys
       ~ConfigDict.get
       ~ConfigDict.get_registrant

@@ -1,0 +1,48 @@
+creationism.configuration.types.configbase.ConfigNone
+=====================================================
+
+.. currentmodule:: creationism.configuration.types.configbase
+
+.. autoclass:: ConfigNone
+   :members:                                   
+   :show-inheritance:                           
+   :inherited-members:                          
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ConfigNone.CONVERT_NAME
+      ~ConfigNone.__init__
+      ~ConfigNone.build
+      ~ConfigNone.cast
+      ~ConfigNone.class_name
+      ~ConfigNone.create
+      ~ConfigNone.determine_replace
+      ~ConfigNone.get_registrant
+      ~ConfigNone.merge
+      ~ConfigNone.names
+      ~ConfigNone.register
+      ~ConfigNone.register_func
+      ~ConfigNone.registered
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ConfigNone.AUTO
+      ~ConfigNone.RECURSIVE
+      ~ConfigNone.REPLACE
+      ~ConfigNone.STATIC
+      ~ConfigNone.name
+      ~ConfigNone.replace
+   
+   

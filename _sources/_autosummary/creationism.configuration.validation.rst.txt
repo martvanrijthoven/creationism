@@ -14,7 +14,7 @@ creationism.configuration.validation
    .. autosummary::
       :toctree:                                          
    
-      check_user_config
+      validate
    
    
 

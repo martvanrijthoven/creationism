@@ -26,6 +26,7 @@ creationism.configuration.types.configstring.ConfigString
       ~ConfigString.class_name
       ~ConfigString.count
       ~ConfigString.create
+      ~ConfigString.determine_replace
       ~ConfigString.encode
       ~ConfigString.endswith
       ~ConfigString.expandtabs
@@ -57,7 +58,6 @@ creationism.configuration.types.configstring.ConfigString
       ~ConfigString.register
       ~ConfigString.register_func
       ~ConfigString.registered
-      ~ConfigString.replace
       ~ConfigString.rfind
       ~ConfigString.rindex
       ~ConfigString.rjust
@@ -87,5 +87,6 @@ creationism.configuration.types.configstring.ConfigString
       ~ConfigString.REPLACE
       ~ConfigString.STATIC
       ~ConfigString.name
+      ~ConfigString.replace
    
    

@@ -25,6 +25,7 @@ creationism.configuration.types.configuration.Configuration
       ~Configuration.clear
       ~Configuration.copy
       ~Configuration.create
+      ~Configuration.determine_replace
       ~Configuration.fromkeys
       ~Configuration.get
       ~Configuration.get_registrant

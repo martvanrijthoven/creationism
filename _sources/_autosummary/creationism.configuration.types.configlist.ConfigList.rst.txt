@@ -26,6 +26,7 @@ creationism.configuration.types.configlist.ConfigList
       ~ConfigList.copy
       ~ConfigList.count
       ~ConfigList.create
+      ~ConfigList.determine_replace
       ~ConfigList.extend
       ~ConfigList.get_registrant
       ~ConfigList.index

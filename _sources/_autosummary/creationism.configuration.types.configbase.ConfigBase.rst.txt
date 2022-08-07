@@ -22,6 +22,7 @@ creationism.configuration.types.configbase.ConfigBase
       ~ConfigBase.cast
       ~ConfigBase.class_name
       ~ConfigBase.create
+      ~ConfigBase.determine_replace
       ~ConfigBase.get_registrant
       ~ConfigBase.merge
       ~ConfigBase.names
@@ -42,5 +43,6 @@ creationism.configuration.types.configbase.ConfigBase
       ~ConfigBase.REPLACE
       ~ConfigBase.STATIC
       ~ConfigBase.name
+      ~ConfigBase.replace
    
    

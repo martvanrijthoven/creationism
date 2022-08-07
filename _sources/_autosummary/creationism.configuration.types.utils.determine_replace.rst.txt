@@ -1,6 +1,0 @@
-creationism.configuration.types.utils.determine\_replace
-========================================================
-
-.. currentmodule:: creationism.configuration.types.utils
-
-.. autofunction:: determine_replace
