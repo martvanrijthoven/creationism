@@ -1,7 +1,7 @@
 ## needs to be in creationism, with argument e.g., WholeSlideDataConfiguration
-def check_user_config(user_config):
+def validate(user_config):
     ...
-    # check wholeslidedata key
+    # check Configuration key
 
         # check mode keys
 

@@ -3,9 +3,7 @@ from collections import UserDict
 
 from creationism.configuration.build import build_object, build_registrant_object
 from creationism.configuration.constants import REPLACE_IDENTIFIER
-from creationism.configuration.types.configbase import ConfigBase
-from creationism.configuration.types.configinstance import ConfigInstance
-from creationism.configuration.types.utils import determine_replace
+from creationism.configuration.types.configbase import ConfigBase, ConfigObject
 
 
 
@@ -13,30 +11,25 @@ from creationism.configuration.types.utils import determine_replace
 class ConfigDict(ConfigBase, UserDict):
     REPLACE = False
 
-    def __init__(self, config_value, replace=None):
-        super().__init__(dict())
-        self._replace = replace
-        self._iterative_init(config_value=config_value)
+    def __init__(self, data, replace=None):
+        super().__init__(dict(), replace=replace)
+        self._iterative_init(data=data)
 
-    @property
-    def replace(self):
-        return self._replace
-
-    def _iterative_init(self, config_value):
-        for key in list(config_value):
-            class_type = type(config_value[key])
+    def _iterative_init(self, data):
+        for key in list(data):
+            class_type = type(data[key])
             replace = re.search(REPLACE_IDENTIFIER, key)
             if replace:
                 key_stripped = key.replace(replace.group(0), "")
                 replace = replace.group(1).lower() == "true"
                 self.data[key_stripped] = ConfigBase.create(
                     registrant_name=class_type,
-                    config_value=config_value[key],
+                    data=data[key],
                     replace=replace,
                 )
             else:
                 self.data[key] = ConfigBase.create( 
-                    registrant_name=class_type, config_value=config_value[key]
+                    registrant_name=class_type, data=data[key]
                 )
 
     def merge(self, config_value):
@@ -47,7 +40,7 @@ class ConfigDict(ConfigBase, UserDict):
 
     def _iterative_merge(self, config_value):
 
-        if determine_replace(self, config_value):
+        if self.determine_replace(config_value):
             self.data = config_value.data
             return
 
@@ -77,7 +70,7 @@ class ConfigDict(ConfigBase, UserDict):
             and registrar_name is not None
             and registrant_name is not None
         ):
-            return ConfigInstance(
+            return ConfigObject(
                 build_registrant_object(
                     self,
                     registrar_module,
@@ -88,6 +81,6 @@ class ConfigDict(ConfigBase, UserDict):
             )
 
         if module is not None and attribute is not None:
-            return ConfigInstance(build_object(self, module, attribute))
+            return ConfigObject(build_object(self, module, attribute))
 
         return self

@@ -7,14 +7,13 @@ from creationism.configuration.constants import (
     REFERENCE_MAP_SYMBOL,
     REFERENCE_START_SYMBOL,
 )
-from creationism.configuration.types.configbase import ConfigBase
-from creationism.configuration.types.configinstance import ConfigInstance
+from creationism.configuration.types.configbase import ConfigBase, ConfigObject
 
 
 @ConfigBase.register((str,))
 class ConfigString(ConfigBase, UserString):
-    def __init__(self, config_value):
-        super().__init__(config_value)
+    def __init__(self, data):
+        super().__init__(data)
 
     def merge(self, config_value):
         self.data = config_value.data
@@ -35,4 +34,4 @@ class ConfigString(ConfigBase, UserString):
         reference = reference[attributes[0]].cast()
         for attr in attributes[1:]:
             reference = getattr(reference, attr)
-        return ConfigInstance(reference)
+        return ConfigObject(reference)

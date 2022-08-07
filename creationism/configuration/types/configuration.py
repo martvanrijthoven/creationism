@@ -1,12 +1,11 @@
 import os
 import pathlib
-from collections import UserDict, UserString
+from collections import UserList
 from copy import deepcopy
 from pathlib import Path
 
 from creationism.configuration.extensions import ConfigurationFileExtension, open_config
-from creationism.configuration.types.configdict import ConfigDict
-from creationism.configuration.types.confignone import ConfigNone
+from creationism.configuration.types import ConfigDict, ConfigNone, ConfigString
 from creationism.mode import DEFAULT_MODE
 
 
@@ -24,7 +23,7 @@ class Configuration(ConfigDict):
         self._name = name
         self._search_paths = self.__class__.SEARCH_PATHS + search_paths
         include_configs(config_value, self._search_paths)
-        super().__init__(config_value=config_value)
+        super().__init__(data=config_value)
 
     @classmethod
     def build(
@@ -98,11 +97,15 @@ class Configuration(ConfigDict):
 
 
 def resolve_none(configuration):
-    for key, value in configuration.items():
-        if issubclass(type(value), UserDict):
+    if type(configuration) == ConfigDict:
+        for key, value in configuration.items():
+            if type(value) == ConfigString and value.lower() == "none":
+                configuration[key] = ConfigNone(None)
+            else:
+                resolve_none(value)
+    elif type(configuration) == UserList:
+        for value in configuration:
             resolve_none(value)
-        elif issubclass(type(value), UserString) and value.lower() == "none":
-            configuration[key] = ConfigNone(None)
 
 
 def resolve_modes(config, modes, default_mode=DEFAULT_MODE):
