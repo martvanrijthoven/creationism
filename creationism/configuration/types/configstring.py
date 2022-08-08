@@ -12,9 +12,6 @@ from creationism.configuration.types.configbase import ConfigBase, ConfigObject
 
 @ConfigBase.register((str,))
 class ConfigString(ConfigBase, UserString):
-    def __init__(self, data):
-        super().__init__(data)
-
     def merge(self, config_value):
         self.data = config_value.data
 
@@ -34,4 +31,4 @@ class ConfigString(ConfigBase, UserString):
         reference = reference[attributes[0]].cast()
         for attr in attributes[1:]:
             reference = getattr(reference, attr)
-        return ConfigObject(reference)
+        return ConfigObject(name=self.name, data=reference)

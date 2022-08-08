@@ -8,9 +8,14 @@ class ConfigBase(RegistrantFactory):
         x, Text.split_capitals, Text.lower, Text.split, partial(Text.get, index=-1)
     )
 
-    def __init__(self, data, replace=None):
+    def __init__(self, name, data, replace=None):
         self.data = data
         self._replace = replace
+        self._name= name
+
+    @property
+    def name(self):
+        return self._name
 
     @property
     def replace(self):

@@ -1,3 +1,4 @@
+from email.policy import strict
 import re
 from collections import UserDict
 
@@ -6,13 +7,12 @@ from creationism.configuration.constants import REPLACE_IDENTIFIER
 from creationism.configuration.types.configbase import ConfigBase, ConfigObject
 
 
-
 @ConfigBase.register((dict,))
 class ConfigDict(ConfigBase, UserDict):
     REPLACE = False
 
-    def __init__(self, data, replace=None):
-        super().__init__(dict(), replace=replace)
+    def __init__(self, name, data, replace=None):
+        super().__init__(name, dict(), replace=replace)
         self._iterative_init(data=data)
 
     def _iterative_init(self, data):
@@ -23,13 +23,14 @@ class ConfigDict(ConfigBase, UserDict):
                 key_stripped = key.replace(replace.group(0), "")
                 replace = replace.group(1).lower() == "true"
                 self.data[key_stripped] = ConfigBase.create(
+                    name=key,
                     registrant_name=class_type,
                     data=data[key],
                     replace=replace,
                 )
             else:
-                self.data[key] = ConfigBase.create( 
-                    registrant_name=class_type, data=data[key]
+                self.data[key] = ConfigBase.create(
+                    name=key, registrant_name=class_type, data=data[key]
                 )
 
     def merge(self, config_value):
@@ -46,6 +47,11 @@ class ConfigDict(ConfigBase, UserDict):
 
         for key in list(config_value):
             if key not in self.data:
+
+                if self.name == "default":
+                    raise ValueError(
+                        f"Default settings with {list(config_value)} does not contain {key}"
+                    )
                 self.data[key] = config_value[key]
             else:
                 self.data[key].merge(config_value[key])
@@ -71,16 +77,19 @@ class ConfigDict(ConfigBase, UserDict):
             and registrant_name is not None
         ):
             return ConfigObject(
-                build_registrant_object(
+                name=self.name,
+                data=build_registrant_object(
                     self,
                     registrar_module,
                     registrar_name,
                     registrant_module,
                     registrant_name,
-                )
+                ),
             )
 
         if module is not None and attribute is not None:
-            return ConfigObject(build_object(self, module, attribute))
+            return ConfigObject(
+                name=self.name, data=build_object(self, module, attribute)
+            )
 
         return self

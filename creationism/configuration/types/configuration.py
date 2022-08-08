@@ -23,7 +23,7 @@ class Configuration(ConfigDict):
         self._name = name
         self._search_paths = self.__class__.SEARCH_PATHS + search_paths
         include_configs(config_value, self._search_paths)
-        super().__init__(data=config_value)
+        super().__init__(name=name, data=config_value)
 
     @classmethod
     def build(
@@ -65,12 +65,8 @@ class Configuration(ConfigDict):
             )
         return configuration
 
-    @property
-    def name(self):
-        return self._name
-
     def merge(self, config):
-        config = ConfigDict(config)
+        config = ConfigDict(name=self.name, data=config)
         super().merge(config)
 
     def build_instances(self, external_configurations=None, build_key=None):
@@ -97,13 +93,13 @@ class Configuration(ConfigDict):
 
 
 def resolve_none(configuration):
-    if type(configuration) == ConfigDict:
+    if isinstance(configuration, ConfigDict):
         for key, value in configuration.items():
-            if type(value) == ConfigString and value.lower() == "none":
-                configuration[key] = ConfigNone(None)
+            if isinstance(value, ConfigString) and value.data.lower() == "none":
+                configuration[key] = ConfigNone(name=key, data=None)
             else:
                 resolve_none(value)
-    elif type(configuration) == UserList:
+    elif isinstance(configuration, UserList):
         for value in configuration:
             resolve_none(value)
 

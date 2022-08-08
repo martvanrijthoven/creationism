@@ -7,11 +7,11 @@ class ConfigList(ConfigBase, UserList):
 
     REPLACE = True
 
-    def __init__(self, data, replace=None):
-        super().__init__(data, replace=replace)
+    def __init__(self, name, data, replace=None):
+        super().__init__(name, data, replace=replace)
         for idx in range(len(self)):
             self.data[idx] = ConfigBase.create(
-                registrant_name=type(self[idx]), data=self.data[idx]
+                name=name+'_'+str(idx), registrant_name=type(self[idx]), data=self.data[idx]
             )
 
     def merge(self, config_value):
